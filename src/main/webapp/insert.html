@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+
+<style>
+	* {
+		margin: 0;
+	}
+
+	.container {
+		border: 2px solid grey;
+		border-radius: 15px;
+		padding: 20px 0px 0px 60px;
+		height: 70vh;
+		width: 30vw;
+		background: transparent;
+		background-image: url(1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.contain {
+		font-size: 22px;
+		font-weight: bold;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		color: white;
+	}
+
+	form {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		margin-top: 40px;
+	}
+
+	h1 {
+		border: 0px solid red;
+		font-size: 50px;
+		font-weight: bold;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	}
+
+	.head {
+		height: 70px;
+		border-radius: 5px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+	}
+
+	input,
+	select {
+		height: 25px;
+		border-radius: 5px;
+		width: 15vw;
+	}
+
+	button {
+		font-size: 23px;
+		font-weight: bold;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		background-image: radial-gradient(rgb(162, 236, 162), rgb(236, 236, 157), rgb(177, 177, 234));
+		height: 55px;
+		width: 25vw;
+		border-radius: 10px;
+		margin-left: 5px;
+		margin-top: 8px;
+		cursor: pointer;
+	}
+</style>
+
+<body style="background-image: url(3.jpg); background-repeat: no-repeat; background-size: cover;">
+	<div class="head">
+		<h1>ADD</h1>
+	</div>
+	<form action="insert-movie" method="post" enctype="multipart/form-data">
+		<div class="container">
+			<div class="contain">
+			
+				<label for="">MOVIE NAME:</label>
+				<input type="text" name="name" placeholder="MOVIE NAME" required><br><br><br>
+
+				<label for="">MOVIE LANGUAGE:</label>
+				<select name="language">
+					<option disabled selected> SELECT A LANGUAGE</option>
+					<option>KANNADA MOVIE</option>
+					<option>HINDI MOVIE</option>
+					<option>ENGLISH MOVIE</option>
+					<option>TELUGU MOVIE</option>
+				</select> <br><br><br>
+
+				<label for="">MOVIE RATING:</label>
+				<input type="text" name="rating" placeholder="MOVIE RATING" required><br><br><br>
+
+				<label for="">MOVIE IMAGE:</label>
+				<input type="file" name="picture" placeholder="MOVIE IMAGE" required> <br><br><br>
+
+				<label for=""> MOVIE GENRE:</label>
+				<select name="genre">
+					<option disabled selected>SELECT A GENRE</option>
+					<option>HORROR MOVIE</option>
+					<option>ROMANTIC MOVIE</option>
+					<option>SUSPENCE MOVIE</option>
+					<option>COMEDY MOVIE</option>
+					<option>ACTION MOVIE</option>
+				</select><br><br><br>
+
+				<a><button>ADD</button></a>
+			</div>
+		</div>
+	</form>
+
+
+</body>
+
+</html>
